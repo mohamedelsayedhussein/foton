@@ -1,0 +1,197 @@
+@media (max-width: 1200px) {
+  nav .main-menu .logo,
+  header .block-2,
+  header .block-1 {
+    display: none;
+  }
+  header .block-3 {
+    background: #333 !important;
+    z-index: 2;
+  }
+  header .block-3 {
+    width: 11%;
+  }
+  header .overlay {
+    width: 100%;
+    left: 0;
+  }
+  header .text-slider-wrapper {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+    left: 10%;
+  }
+  header .slider-control {
+    left: 18%;
+  }
+  nav .main-menu .links .item:first-child {
+    border-left: none;
+    margin-left: 0;
+  }
+  nav .main-menu .links .item {
+    width: 25%;
+    margin: auto;
+  }
+  header .text-slide h1 {
+    font-size: 30px !important;
+  }
+}
+@media (max-width: 992px) {
+  nav .container {
+    max-width: 100% !important;
+    margin: 0 auto !important;
+  }
+  .vehicles-details-section .slideshow .item .details {
+    padding: 0 0 2rem 2rem;
+  }
+  nav .top-menu .close-menu-area {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 1.5rem;
+    z-index: 1;
+  }
+  nav .main-menu .links .extra-links {
+    right: initial;
+    left: 1.5rem;
+  }
+  nav .top-menu span.close-guide {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  nav svg.svg-mobile-hidden {
+    display: none !important;
+  }
+}
+@media (max-width: 767px) {
+  footer .logo {
+    display: none;
+  }
+  header .slider-control {
+      left: 25%;
+      bottom: 20%;
+  }
+  header .slider-control button {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+  .search-bar input:focus, button:focus + input {
+    width: 170px;
+  }
+  .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    font-size: .8rem;
+  }
+  .services-section .service {
+    -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  .details-offer-sec .slider-imgs .item img {
+    width: 75% !important;
+  }
+  .details-offer-sec .offer-slider-container .prevButton {
+    left: 0;
+  }
+  .details-offer-sec .offer-slider-container .nextButton {
+    right: 0;
+  }
+  .blog-details-box .img {
+    float: none;
+    margin: auto;
+    border-radius: 0;
+    width: 100%;
+    height: 250px;
+  }
+}
+@media (max-width: 650px) {
+  header .fixed-nav-bar .language-box {
+    left: 30%;
+  }
+  nav .main-menu .links .extra-links li {
+    margin: 0 .4rem;
+  }
+  .block-slider-section .main-slider-controllers button {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.3rem;
+  }
+  header .text-slider-wrapper {
+    width: 80%;
+  }
+  .vehicles-details-section .slideshow .controllers {
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  .block-slider-section .main-slider-controllers {
+    margin-top: 1.5rem;
+  }
+  .blog-section .blog {
+    width: 75%;
+    margin: auto;
+  }
+}
+@media (max-width: 550px) {
+  header .fixed-nav-bar .social-links {
+    display: none;
+  }
+  header .fixed-nav-bar .language-box {
+    left: 47%;
+  }
+}
+@media (max-width: 575px) {
+  nav .links {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50%;
+  }
+  nav .main-menu .links .item {
+    display: block !important;
+    width: 100%;
+    height: auto !important;
+    border-right: none;
+  }
+  nav {
+    height: 100vh !important;
+  }
+  nav .main-menu .logo {
+    display: block;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+  }
+  nav:hover .main-menu .logo img {
+    opacity: 0.4;
+  }
+  nav .top-menu .close-menu-area .close-icon {
+    width: 1.4rem;
+  }
+  .block-slider-section .section-title h2 {
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+  nav .main-menu .links .extra-links {
+    right: 1.5rem;
+  }
+  nav .main-menu .links .extra-links li a {
+    font-size: .8rem;
+  }
+}
+@media (max-width: 420px) {
+  footer .rights p {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 380px) {
+  .search-bar input:focus, button:focus + input {
+    width: 100px;
+  }
+  .vehicles-details-section .slideshow .item .img {
+    width: 300px;
+  }
+}

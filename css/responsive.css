@@ -58,6 +58,9 @@
   nav .top-menu span.close-guide {
     display: none;
   }
+  .event-area .event-slider .slider-for .item {
+    padding-top: 50%;
+  }
 }
 @media (max-width: 900px) {
   nav svg.svg-mobile-hidden {
@@ -65,8 +68,10 @@
   }
 }
 @media (max-width: 767px) {
-  footer .logo {
-    display: none;
+  .news-slider .box {
+    width: 75% !important;
+    margin: auto;
+    display: block !important;
   }
   header .slider-control {
       left: 25%;
@@ -82,6 +87,14 @@
   }
   .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
     font-size: .8rem;
+  }
+  .events .events-box {
+    padding-top: 65%;
+  }
+  .events .slider-control button {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
   }
   .services-section .service {
     -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
@@ -131,7 +144,8 @@
   .block-slider-section .main-slider-controllers {
     margin-top: 1.5rem;
   }
-  .blog-section .blog {
+  .blog-section .blog,
+  .events-list .our-event {
     width: 75%;
     margin: auto;
   }
@@ -144,7 +158,7 @@
     left: 47%;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 615px) {
   nav .links {
     flex-direction: column;
     justify-content: center;
@@ -183,6 +197,9 @@
   }
 }
 @media (max-width: 420px) {
+  header .fixed-nav-bar .foton-main-logo {
+    width: 5rem;
+  }
   footer .rights p {
     font-size: 0.7rem;
   }
@@ -193,5 +210,8 @@
   }
   .vehicles-details-section .slideshow .item .img {
     width: 300px;
+  }
+  .events-list .our-event {
+    width: 100%;
   }
 }

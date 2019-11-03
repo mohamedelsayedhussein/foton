@@ -25,6 +25,9 @@ $(document).ready(function() {
   let closeBtn = $(".close-menu-area");
   let nav = $("nav");
 
+  hamburger.mousemove(function() {
+    nav.addClass("slide-down");
+  });
   hamburger.click(function(e) {
     e.stopPropagation();
     nav.addClass("slide-down");

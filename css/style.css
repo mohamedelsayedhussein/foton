@@ -2234,7 +2234,7 @@ footer .rights p {
   position: relative;
   width: 100%;
   height: 0;
-  padding-top: 65%;
+  padding-top: 85%;
   overflow: hidden;
 }
 .events-list .our-event .img img {
@@ -2248,11 +2248,18 @@ footer .rights p {
 .events-list .our-event .event-details {
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
+.events-list .our-event .event-details .title {
+  opacity: .9;
+  padding-bottom: .3rem;
+  border-bottom: 1px solid rgba(0,0,0,.2);
+}
 .events-list .our-event .event-details .title a {
   color: inherit;
 }
 .events-list .our-event .event-details .event-range {
   margin: .5rem 0 1rem;
+  padding-bottom: .3rem;
+  border-bottom: 1px solid rgba(0,0,0,.2);
 }
 .events-list .our-event .event-details .event-range p {
   margin: 0;
@@ -2261,6 +2268,10 @@ footer .rights p {
   font-weight: 800;
   font-family: var(--maunFont);
   color: rgba(0,0,0,.4);
+}
+.events-list .our-event .event-details .event-range p span {
+  color: var(--mainColor);
+  font-weight: 400;
 }
 .events-list .our-event .event-details .description p {
   line-height: 1.2;

@@ -2,6 +2,7 @@
 
 :root {
   --mainColor: #2395ec;
+  --secondaryColor: #dc3545;
   --mainFont: "Oswald", sans-serif;
   --primaryFont: "Arial", sans-serif;
 }
@@ -45,6 +46,12 @@ a:active {
 }
 .main-color {
   color: var(--mainColor);
+}
+.second-color {
+  color: var(--secondaryColor);
+}
+.bg-second-color {
+  background: var(--secondaryColor);
 }
 .form-control {
   outline: none !important;
@@ -616,10 +623,14 @@ nav .main-menu .links .item:hover .after-sales-icon {
     opacity: 1;
   }
 }
+nav .main-menu .links .item.service-item svg {
+  width: 3.5rem;
+  display: block;
+}
 nav .main-menu .links .item .svgHeart {
   fill: none;
   stroke: #fff;
-  stroke-width: 3;
+  stroke-width: 4;
   stroke-dasharray: 1500;
   opacity: 0;
 }
@@ -2278,6 +2289,10 @@ footer .rights p {
   padding-bottom: .3rem;
   border-bottom: 1px solid rgba(0,0,0,.2);
 }
+.events-list .our-event .event-details .event-range i {
+  opacity: .9;
+  font-size: .8rem;
+}
 .events-list .our-event .event-details .event-range p {
   margin: 0;
   padding: 0;
@@ -2296,4 +2311,152 @@ footer .rights p {
 .events-list .our-event .event-details .description a {
   color: inherit;
   font-size: .8rem;
+}
+
+/*  dealers page style  */
+
+.dealers-section .dealer-filter .dealer-list {
+  position: relative;
+  display: inline-block;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: .5rem 2rem .5rem 1rem;
+  cursor: pointer;
+}
+.dealers-section .dealer-filter .dealer-list > span {
+  font-family: var(--mainFont);
+  opacity: .8;
+  display: block;
+}
+.dealers-section .dealer-filter .dealer-list i {
+  position: absolute;
+  top: 50%;
+  right: .5rem;
+  transform: translateY(-50%);
+}
+.dealers-section .dealer-filter .dealer-list ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: #fff;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+}
+.dealers-section .dealer-filter .dealer-list ul.slideShow {
+  opacity: 1;
+  visibility: visible;
+}
+.dealers-section .dealer-filter .dealer-list ul li {
+  padding: .3rem .5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+  font-size: .9rem;
+}
+.dealers-section .dealer-filter .dealer-list ul li:last-child {
+  border-bottom: none;
+}
+.dealers-section .dealer-filter .dealer-list ul li:hover {
+  background: rgba(0,0,0,.3);
+}
+.dealers-section .dealer-filter button[type='submit'] {
+  background: #242424;
+  color: #fff;
+  padding: .5rem 2rem;
+  border: none;
+  outline: none;
+  transition: all .1s linear;
+}
+.dealers-section .dealer-filter button[type='submit']:hover {
+  background: #000;
+}
+.dealers-section .dealer .map {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding-bottom: 56%;
+  padding-top: 25px;
+  position: relative;
+}
+.dealers-section .dealer .map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*  careers page style  */
+
+
+.careers .text-wrap h3.career-title,
+.careers .text-wrap h5.Vacancies {
+  color: var(--secondaryColor);
+}
+.careers .text-wrap p.career-desc {
+  line-height: 1.4;
+  color: #343a40;
+  font-size: .9rem;
+}
+.careers .text-wrap h5.Vacancies span {
+  color: var(--mainColor);
+}
+.careers .form .personal-info {
+  color: var(--secondaryColor);
+  border: 2px solid var(--secondaryColor) !important;
+}
+.careers .form .form-group .form-control {
+  font-size: .8rem;
+  color: #343a40;
+}
+.careers .form .form-group {
+  position: relative;
+}
+.careers .form .form-group label.upload {
+  color: #fff;
+  background: var(--secondaryColor);
+  padding: .5rem 1rem;
+  cursor: pointer;
+}
+.careers .form .form-group #custom-file {
+  display: none;
+}
+.careers .form button[type='submit'] {
+  background: var(--secondaryColor);
+  color: #fff;
+}
+
+/*  showrooms page style  */
+
+.showrooms-section .showroom .images .img {
+  position: relative;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  padding-top: 15%;
+  margin-right: .5rem;
+}
+.showrooms-section .showroom .images .img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.showrooms-section .showroom .map {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding-bottom: 56%;
+  padding-top: 25px;
+  position: relative;
+}
+.showrooms-section .showroom .map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

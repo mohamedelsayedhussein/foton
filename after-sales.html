@@ -261,7 +261,7 @@
                                     </g>
                                 </svg>
                                 offers</a></li>
-                        <li class=item>
+                        <li class='item service-item'>
                             <a class='link' href="services.html">
                                 <svg class='svg-mobile-hidden' viewBox="0 0 267.17 245.52">
                                     <defs>
@@ -281,7 +281,7 @@
                                         transform="translate(-21.33 -27.15)" />
                                 </svg>
                                 services</a></li>
-                        <li class=item>
+                        <li class='item'>
                             <a class='link' href="after-sales.html">
                                 <svg class='svg-mobile-hidden' viewBox="0 0 2000 2000">
                                     <defs>
@@ -413,9 +413,49 @@
                                         <p class='capital-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                             Porro dolor molestiae deleniti atque? Provident, nesciunt!</p>
                                     </div>
-                                    <div class="w-hours d-flex align-items-center">
+                                    <div class="w-hours d-flex flex-column mt-4">
                                         <h6 class="capital-text m-0">working hours :</h6>
-                                        <p class='m-0 pl-3'>10.00 <b>am</b> : 09.00 <b>pm</b></p>
+                                        <table class="table table-bordered table-sm mt-3">
+                                            <thead>
+                                                <tr class='capital-text'>
+                                                    <th scope="col">day</th>
+                                                    <th scope="col">from</th>
+                                                    <th scope="col">to</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>sunday</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>monday</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>tuesday</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>wednesday</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>thursday</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>saturday</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
@@ -450,9 +490,49 @@
                                         <p class='capital-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                             Porro dolor molestiae deleniti atque? Provident, nesciunt!</p>
                                     </div>
-                                    <div class="w-hours d-flex align-items-center">
+                                    <div class="w-hours d-flex flex-column mt-4">
                                         <h6 class="capital-text m-0">working hours :</h6>
-                                        <p class='m-0 pl-3'>10.00 <b>am</b> : 09.00 <b>pm</b></p>
+                                        <table class="table table-bordered table-sm mt-3">
+                                            <thead>
+                                                <tr class='capital-text'>
+                                                    <th scope="col">day</th>
+                                                    <th scope="col">from</th>
+                                                    <th scope="col">to</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>sunday</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>monday</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>tuesday</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>wednesday</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>thursday</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>saturday</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
@@ -696,22 +776,22 @@
 
         $('.hero-vehicles-slider').slick(heroVehiclesSlider);
 
-        $('#car-type').click(function(e){
+        $('#car-type').click(function (e) {
             e.stopPropagation()
             $('#car-type ul').toggleClass('slideShow');
         })
 
-        $(document).click(function() {
+        $(document).click(function () {
             $('#car-type ul, #part-name ul').removeClass('slideShow');
         })
-        $('#car-type ul li').click(function() {
+        $('#car-type ul li').click(function () {
             $('#type-value').text($(this).text());
         })
-        $('#part-name ul li').click(function() {
+        $('#part-name ul li').click(function () {
             $('#spare-value').text($(this).text());
         })
 
-        $('#part-name').click(function(e){
+        $('#part-name').click(function (e) {
             e.stopPropagation()
             $('#part-name ul').toggleClass('slideShow');
         })

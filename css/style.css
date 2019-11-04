@@ -315,6 +315,23 @@ nav .top-menu {
   height: 4rem;
   line-height: 4rem;
 }
+nav .top-menu .logo {
+  width: 8.5rem;
+  overflow: hidden;
+}
+nav .top-menu .logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  opacity: 0.4;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+nav .top-menu .logo:hover img {
+  opacity: 1;
+}
 nav .top-menu .close-menu-area {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;

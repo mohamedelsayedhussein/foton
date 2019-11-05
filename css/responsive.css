@@ -203,6 +203,10 @@
     font-size: 1.3rem;
     font-weight: 400;
   }
+  .view-gallery .view-gallery-slider .item {
+    width: 100% !important;
+    padding-top: 100%;
+  }
 }
 @media (max-width: 420px) {
   header .fixed-nav-bar .foton-main-logo {

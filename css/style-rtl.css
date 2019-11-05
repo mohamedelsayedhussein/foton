@@ -10,6 +10,7 @@
   outline: none !important;
 }
 body {
+  direction: rtl;
   background: #fff;
   overflow-x: hidden !important;
   font-family: var(--primaryFont);
@@ -68,10 +69,10 @@ a:active {
 .goTop_btn {
   position: fixed;
   bottom: 2rem;
-  right: 2rem;
+  left: 2rem;
   background: var(--mainColor);
-  -webkit-box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.4);
-  box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: -2px 3px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: -2px 3px 15px rgba(0, 0, 0, 0.4);
   width: 40px;
   height: 40px;
   line-height: 40px;
@@ -95,7 +96,7 @@ a:active {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  right: 0;
+  left: 0;
   z-index: 3;
 }
 .some-fast-links li {
@@ -119,7 +120,7 @@ a:active {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  right: 70px;
+  left: 70px;
   min-width: 150px;
   height: 50px;
   line-height: 50px;
@@ -132,17 +133,17 @@ a:active {
   transition: all 0.1s linear;
 }
 .some-fast-links li:hover span {
-  right: 55px !important;
+  left: 55px !important;
   visibility: visible;
   opacity: 1;
 }
 .some-fast-links a {
   position: absolute;
   top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  right: 50%;
+  -webkit-transform: translate(50%, -50%);
+  -ms-transform: translate(50%, -50%);
+  transform: translate(50%, -50%);
   display: block;
   color: silver;
   font-size: 0.75rem;
@@ -256,7 +257,7 @@ header .fixed-nav-bar .social-links a:hover {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  right: 0;
+  left: 0;
   width: 30px;
   height: 30px;
   line-height: 30px;
@@ -288,7 +289,7 @@ header .fixed-nav-bar .social-links a:hover {
 }
 .search-bar input:focus,
 button:focus + input {
-  padding: 5px 35px 5px 15px;
+  padding: 5px 15px 5px 35px;
   width: 250px;
   border-bottom: 1px solid #868686;
   cursor: text;
@@ -369,7 +370,7 @@ nav .top-menu .close-menu-area:hover svg line {
 }
 nav .top-menu span.close-guide {
   display: block;
-  margin-left: 0.5rem;
+  margin-right: 0.5rem;
   color: #868686;
   font-size: 1.4rem;
   font-family: var(--mainFont);
@@ -378,9 +379,9 @@ nav .top-menu span.close-guide {
   transition: all 0.2s linear;
 }
 nav .top-menu .close-menu-area:hover .close-icon {
-  -webkit-transform: rotatez(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotatez(90deg);
+  -webkit-transform: rotatez(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotatez(-90deg);
 }
 nav .top-menu .close-menu-area:hover span {
   color: #fff;
@@ -424,14 +425,14 @@ nav .main-menu .links .item {
   align-items: center;
   width: 16.666%;
   height: 100%;
-  border-right: 1px solid #2a292a;
+  border-left: 1px solid #2a292a;
 }
 nav .main-menu .links .item:first-child {
-  border-left: 1px solid #2a292a;
-  margin-left: 2rem;
+  border-right: 1px solid #2a292a;
+  margin-right: 2rem;
 }
 nav .main-menu .links .item:nth-child(6) {
-  border-right: 0;
+  border-left: 0;
 }
 nav .main-menu .links .item .link {
   display: block;
@@ -733,7 +734,7 @@ nav .main-menu .links .item svg {
 nav .main-menu .links .extra-links {
   position: absolute;
   top: 1.5rem;
-  right: 4rem;
+  left: 4rem;
 }
 nav .main-menu .links .extra-links li {
   margin: 0 0.7rem;
@@ -785,14 +786,15 @@ header .slick-slide {
 .slider-control {
   position: absolute;
   bottom: 8%;
-  left: 33%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  right: 33%;
+  -webkit-transform: translate(50%, -50%);
+  -ms-transform: translate(50%, -50%);
+  transform: translate(50%, -50%);
   z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: row-reverse;
 }
 .slider-control button {
   position: relative;
@@ -814,7 +816,7 @@ header .slick-slide {
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -824,7 +826,7 @@ header .slick-slide {
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -882,7 +884,7 @@ header .slick-slide {
 }
 header .block-1 {
   position: absolute;
-  left: 0%;
+  right: 0%;
   z-index: 1;
   height: calc(100vh - 4rem);
   width: 5%;
@@ -890,7 +892,7 @@ header .block-1 {
 }
 header .block-2 {
   position: absolute;
-  left: 25%;
+  right: 25%;
   z-index: 1;
   height: calc(100vh - 4rem);
   width: 25%;
@@ -898,7 +900,7 @@ header .block-2 {
 }
 header .block-3 {
   position: absolute;
-  right: 0%;
+  left: 0%;
   z-index: 1;
   height: calc(100vh - 4rem);
   width: 5%;
@@ -906,7 +908,7 @@ header .block-3 {
 }
 header .overlay {
   position: absolute;
-  left: 5%;
+  right: 5%;
   z-index: 1;
   width: 20.01%;
   height: calc(100vh - 4rem);
@@ -915,7 +917,7 @@ header .overlay {
 header .text-slider-wrapper {
   position: absolute;
   top: 35%;
-  left: 28%;
+  right: 28%;
   z-index: 2;
   width: 22%;
   overflow: hidden;
@@ -937,7 +939,7 @@ header .text-slide h1 span {
 }
 header .text-slide p {
   margin: 0;
-  padding: 0 0.5rem 0 0;
+  padding: 0 0 0 0.5rem;
   color: #ddd;
 }
 header .slick-slide.slick-active .slider-title,
@@ -975,6 +977,7 @@ header .slick-slide.slick-active .slider-description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: row-reverse;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -1027,17 +1030,17 @@ header .slick-slide.slick-active .slider-description {
   content: "";
   position: absolute;
   bottom: -0.7rem;
-  left: 0;
+  right: 0;
   display: block;
   width: 95%;
   height: 3px;
-  margin-left: 0.1rem;
+  margin-right: 0.1rem;
   border-radius: 10px;
   -webkit-filter: blur(0.1rem);
   filter: blur(0.1rem);
-  background: -o-linear-gradient(left, transparent, #3b3b3b, transparent);
-  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#3b3b3b), to(transparent));
-  background: linear-gradient(to right, transparent, #3b3b3b, transparent);
+  background: -o-linear-gradient(right, transparent, #3b3b3b, transparent);
+  background: -webkit-gradient(linear, right top, left top, from(transparent), color-stop(#3b3b3b), to(transparent));
+  background: linear-gradient(to left, transparent, #3b3b3b, transparent);
   -webkit-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
@@ -1114,7 +1117,7 @@ header .slick-slide.slick-active .slider-description {
   height: 1px;
   background: #000;
   opacity: 0.2;
-  margin-left: 1rem;
+  margin-right: 1rem;
 }
 .block-slider-section .inner-text h5:before {
   content: "";
@@ -1123,7 +1126,7 @@ header .slick-slide.slick-active .slider-description {
   height: 1px;
   background: #000;
   opacity: 0.2;
-  margin-right: 1rem;
+  margin-left: 1rem;
 }
 .offers-slider .box {
   position: relative;
@@ -1140,7 +1143,7 @@ header .slick-slide.slick-active .slider-description {
 .offers-slider .box .price sub {
   font-size: 0.8rem;
   font-weight: lighter;
-  margin-left: 0.2rem;
+  margin-right: 0.2rem;
 }
 .offers-slider .box .img {
   width: 11rem !important;
@@ -1148,7 +1151,7 @@ header .slick-slide.slick-active .slider-description {
 .offers-slider .box .shape {
   position: absolute;
   top: 0.5rem;
-  right: -0.5rem;
+  left: -0.5rem;
   background: #242424;
   color: #fff;
   padding: 0.3rem 1rem;
@@ -1157,10 +1160,10 @@ header .slick-slide.slick-active .slider-description {
   content: "";
   position: absolute;
   bottom: -5px;
-  right: -4px;
+  left: -4px;
   border-top: 8px solid transparent;
-  border-right: 5px solid transparent;
-  border-left: 8px solid #242424;
+  border-left: 5px solid transparent;
+  border-right: 8px solid #242424;
   border-bottom: 5px solid transparent;
 }
 .offers-slider .box .shape span {
@@ -1171,7 +1174,7 @@ header .slick-slide.slick-active .slider-description {
 .offers-slider .box .offer-details {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   background: rgba(127, 132, 135, 0.8);
   width: 100%;
   height: 100%;
@@ -1217,7 +1220,7 @@ section.highlights .highlights-gallery .gallery:after {
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
@@ -1225,7 +1228,7 @@ section.highlights .highlights-gallery .gallery:after {
 section.highlights .highlights-gallery .gallery img {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -1234,7 +1237,7 @@ section.highlights .highlights-gallery .gallery img {
 section.highlights .highlights-gallery .gallery .highlights-details {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -1291,7 +1294,7 @@ section.highlights .highlights-gallery .gallery .highlights-details p {
           transform: scale(1);
 }
 .news-slider .caption {
-  text-align: left;
+  text-align: right;
   padding: .5rem 1rem !important;
   background: var(--primaryColor) !important;
 }
@@ -1309,14 +1312,14 @@ section.highlights .highlights-gallery .gallery .highlights-details p {
   color: #232323 !important;
 }
 .news-slider .more-btn {
-  text-align: left;
+  text-align: right;
 }
 .news-slider .more-btn a {
   display: inline-block;
   background: #1b1b1b;
   color: #fff;
   padding: 0.3rem 1.5rem;
-  margin: 0 0 1rem 1rem;
+  margin: 0 1rem 1rem 0;
   font-family: var(--mainFont);
 }
 .news-slider .more-btn a:hover {
@@ -1338,7 +1341,7 @@ section.block-slider-section.events {
 .events .events-box img {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   max-height: 100%;
   overflow: hidden;
@@ -1348,7 +1351,7 @@ section.block-slider-section.events {
 .events .events-box .caption {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   padding: 0 1rem;
@@ -1379,13 +1382,13 @@ section.block-slider-section.events {
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
 }
 .events .slider-control {
-  left: 50%;
+  right: 50%;
   top: 80%;
 }
 
@@ -1407,7 +1410,7 @@ footer .logo {
 footer .logo img {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   max-height: 100%;
   overflow: hidden;
@@ -1475,7 +1478,7 @@ footer .artwork {
 footer .artwork img {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -1487,17 +1490,17 @@ footer .artwork:after {
   content: '';
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   border-top: 1px solid #a7a7a7;
-  border-left: 1px solid #a7a7a7;
+  border-right: 1px solid #a7a7a7;
   -webkit-transform: scaleX(0) scaleY(0);
       -ms-transform: scaleX(0) scaleY(0);
           transform: scaleX(0) scaleY(0);
-  -webkit-transform-origin: top left;
-      -ms-transform-origin: top left;
-          transform-origin: top left;
+  -webkit-transform-origin: top right;
+      -ms-transform-origin: top right;
+          transform-origin: top right;
   -webkit-transition: all .2s linear;
   -o-transition: all .2s linear;
   transition: all .2s linear;
@@ -1506,17 +1509,17 @@ footer .artwork:before {
   content: '';
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   border-bottom: 1px solid #a7a7a7;
-  border-right: 1px solid #a7a7a7;
+  border-left: 1px solid #a7a7a7;
   -webkit-transform: scaleX(0) scaleY(0);
       -ms-transform: scaleX(0) scaleY(0);
           transform: scaleX(0) scaleY(0);
-  -webkit-transform-origin: bottom right;
-      -ms-transform-origin: bottom right;
-          transform-origin: bottom right;
+  -webkit-transform-origin: bottom left;
+      -ms-transform-origin: bottom left;
+          transform-origin: bottom left;
   -webkit-transition: all .2s linear;
   -o-transition: all .2s linear;
   transition: all .2s linear;
@@ -1568,7 +1571,7 @@ footer .rights p {
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
@@ -1583,10 +1586,10 @@ footer .rights p {
 .vehicles-hero-section .hero-vehicles-slider .box .caption {
   position: absolute;
   top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  right: 50%;
+  -webkit-transform: translate(50%, -50%);
+  -ms-transform: translate(50%, -50%);
+  transform: translate(50%, -50%);
   z-index: 2;
 }
 .vehicles-hero-section .hero-vehicles-slider .box .caption h2 {
@@ -1596,12 +1599,12 @@ footer .rights p {
   color: #fff;
 }
 .vehicles-hero-section .slider-control {
-  left: 50%;
+  right: 50%;
   bottom: initial;
   top: 80%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(50%, -50%);
+  -ms-transform: translate(50%, -50%);
+  transform: translate(50%, -50%);
 }
 
 /* vehiclies-list section style */
@@ -1654,7 +1657,7 @@ footer .rights p {
 .vehiclies-list .vehicle .details {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   background: rgba(127, 132, 135, 0.8);
@@ -1673,10 +1676,10 @@ footer .rights p {
 .vehiclies-list .vehicle .details a {
   position: absolute;
   top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  right: 50%;
+  -webkit-transform: translate(50%, -50%);
+  -ms-transform: translate(50%, -50%);
+  transform: translate(50%, -50%);
   display: block;
   border: 2px solid #fff;
   padding: 0.3rem 1rem;
@@ -1749,15 +1752,15 @@ footer .rights p {
   object-fit: cover;
 }
 .vehicles-details-section .slideshow .item .details {
-  padding-left: 3rem;
+  padding-right: 3rem;
 }
 .vehicles-details-section .slideshow .slick-dots {
   position: absolute;
-  left: 50%;
+  right: 50%;
   bottom: -5rem;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
+  -webkit-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  transform: translateX(50%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1788,10 +1791,10 @@ footer .rights p {
   object-fit: cover;
   position: absolute;
   top: -70px;
-  left: 20px;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  right: 20px;
+  -webkit-transform: translate(50%, -50%);
+  -ms-transform: translate(50%, -50%);
+  transform: translate(50%, -50%);
   opacity: 0;
   border: 2px solid var(--mainColor);
   border-radius: 100%;
@@ -1805,11 +1808,11 @@ footer .rights p {
   background-color: var(--mainColor);
   position: absolute;
   top: -30px;
-  left: 13px;
+  right: 13px;
   z-index: 5;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 .vehicles-details-section .dot:hover img {
   opacity: 1;
@@ -1834,12 +1837,12 @@ footer .rights p {
   height: 60vh;
 }
 .ultimate-banner .inner-banner h1 {
-  text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
+  text-shadow: -3px 3px 15px rgba(0, 0, 0, 0.5);
 }
 .ultimate-banner .inner-banner p {
   width: 75%;
   margin: auto;
-  text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
+  text-shadow: -3px 3px 15px rgba(0, 0, 0, 0.5);
 }
 .services-section .service {
   padding: 1rem;
@@ -1872,7 +1875,7 @@ footer .rights p {
 .after-sales-section #tabs-1 .map iframe {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
 }
@@ -1881,7 +1884,7 @@ footer .rights p {
   display: inline-block;
   min-width: 200px;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  padding: .5rem 2rem .5rem 1rem;
+  padding: .5rem 1rem .5rem 2rem;
   cursor: pointer;
 }
 .spareParts .sparePartsList > span {
@@ -1892,7 +1895,7 @@ footer .rights p {
 .spareParts .sparePartsList i {
   position: absolute;
   top: 50%;
-  right: .5rem;
+  left: .5rem;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -1900,7 +1903,7 @@ footer .rights p {
 .spareParts .sparePartsList ul {
   position: absolute;
   top: 100%;
-  left: 0;
+  right: 0;
   width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.2);
   background: #fff;
@@ -1951,7 +1954,7 @@ footer .rights p {
 .spareParts .details .img-box img {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -1982,36 +1985,36 @@ footer .rights p {
 .details-offer-sec .offer-slider-container .prevButton {
   position: absolute;
   top: 50%;
-  left: -1rem;
+  right: -1rem;
   width: 35px;
   height: 35px;
-  -webkit-transform: translateY(-50%) rotate(135deg);
-      -ms-transform: translateY(-50%) rotate(135deg);
-          transform: translateY(-50%) rotate(135deg);
+  -webkit-transform: translateY(-50%) rotate(-135deg);
+      -ms-transform: translateY(-50%) rotate(-135deg);
+          transform: translateY(-50%) rotate(-135deg);
   -webkit-transform-origin: center center;
       -ms-transform-origin: center center;
           transform-origin: center center;
   border-top: 2px solid transparent;
   border-bottom: 2px solid #242424;
-  border-right: 2px solid #242424;
+  border-left: 2px solid #242424;
   z-index: 3;
   cursor: pointer;
 }
 .details-offer-sec .offer-slider-container .nextButton {
   position: absolute;
   top: 50%;
-  right: -1rem;
+  left: -1rem;
   width: 35px;
   height: 35px;
-  -webkit-transform: translateY(-50%) rotate(45deg);
-      -ms-transform: translateY(-50%) rotate(45deg);
-          transform: translateY(-50%) rotate(45deg);
+  -webkit-transform: translateY(-50%) rotate(-45deg);
+      -ms-transform: translateY(-50%) rotate(-45deg);
+          transform: translateY(-50%) rotate(-45deg);
   -webkit-transform-origin: center center;
       -ms-transform-origin: center center;
           transform-origin: center center;
   border-top: 2px solid #242424;
   border-bottom: 2px solid transparent;
-  border-right: 2px solid #242424;
+  border-left: 2px solid #242424;
   z-index: 3;
   cursor: pointer;
 }
@@ -2053,7 +2056,7 @@ footer .rights p {
 .blog-section .blog .img img {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -2062,7 +2065,7 @@ footer .rights p {
 .floating-date {
   position: absolute;
   top: 1rem;
-  left: 1rem;
+  right: 1rem;
   background: rgba(0, 0, 0, 0.7);
   color: #fff;
   font-size: 0.8rem;
@@ -2083,7 +2086,7 @@ footer .rights p {
 .blog-section .blog .more {
   position: absolute;
   bottom: 0;
-  left: 0rem;
+  right: 0rem;
   font-size: 0.8rem;
   z-index: 1;
 }
@@ -2112,13 +2115,13 @@ footer .rights p {
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 .blog-details-box .img {
-  float: left;
+  float: right;
   width: 350px;
   height: 350px;
   border-radius: 50%;
   overflow: hidden;
   shape-outside: circle();
-  margin: 3rem 3rem 2rem 0;
+  margin: 3rem 0 2rem 3rem;
 }
 .blog-details-box .img img {
   width: 100%;
@@ -2142,7 +2145,7 @@ footer .rights p {
   line-height: 40px;
   text-align: center;
   font-size: 1.3rem;
-  margin-right: 1rem;
+  margin-left: 1rem;
   -webkit-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
@@ -2191,16 +2194,16 @@ footer .rights p {
 .about-page .img img {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .about-page .description {
-  border-left: 3px solid var(--mainColor);
-  padding-left: 2rem;
-  margin-left: 1rem;
+  border-right: 3px solid var(--mainColor);
+  padding-right: 2rem;
+  margin-right: 1rem;
 }
 .about-page .description p {
   font-size: 0.9rem;
@@ -2239,7 +2242,7 @@ footer .rights p {
 .contact-section form .form-group i {
   position: absolute;
   top: 50%;
-  right: 0.5rem;
+  left: 0.5rem;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -2267,15 +2270,15 @@ footer .rights p {
   height: 0;
   overflow: hidden;
   padding-top: 56%;
-  -webkit-box-shadow: 0.5rem 0.5rem 0 rgba(0, 0, 0, 0.3), 1rem 1rem 0 rgba(0, 0, 0, 0.2),
-    1.5rem 1.5rem 0 rgba(0, 0, 0, 0.1), 2rem 2rem 0 rgba(0, 0, 0, 0.05);
-          box-shadow: 0.5rem 0.5rem 0 rgba(0, 0, 0, 0.3), 1rem 1rem 0 rgba(0, 0, 0, 0.2),
-    1.5rem 1.5rem 0 rgba(0, 0, 0, 0.1), 2rem 2rem 0 rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: -0.5rem 0.5rem 0 rgba(0, 0, 0, 0.3), -1rem 1rem 0 rgba(0, 0, 0, 0.2),
+    -1.5rem 1.5rem 0 rgba(0, 0, 0, 0.1), -2rem 2rem 0 rgba(0, 0, 0, 0.05);
+          box-shadow: -0.5rem 0.5rem 0 rgba(0, 0, 0, 0.3), -1rem 1rem 0 rgba(0, 0, 0, 0.2),
+    -1.5rem 1.5rem 0 rgba(0, 0, 0, 0.1), -2rem 2rem 0 rgba(0, 0, 0, 0.05);
 }
 .contact-section .img img {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -2294,7 +2297,7 @@ footer .rights p {
 .contact-section .contact-information .location-map .our-map iframe {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
 }
@@ -2344,7 +2347,7 @@ footer .rights p {
 .event-area .event-slider .slider-for .item img {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -2386,7 +2389,7 @@ footer .rights p {
 .events-list .our-event .img img {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -2438,7 +2441,7 @@ footer .rights p {
   position: relative;
   display: inline-block;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  padding: .5rem 2rem .5rem 1rem;
+  padding: .5rem 1rem .5rem 2rem;
   cursor: pointer;
 }
 .dealers-section .dealer-filter .dealer-list > span {
@@ -2449,7 +2452,7 @@ footer .rights p {
 .dealers-section .dealer-filter .dealer-list i {
   position: absolute;
   top: 50%;
-  right: .5rem;
+  left: .5rem;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -2457,7 +2460,7 @@ footer .rights p {
 .dealers-section .dealer-filter .dealer-list ul {
   position: absolute;
   top: 100%;
-  left: 0;
+  right: 0;
   width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.2);
   background: #fff;
@@ -2505,7 +2508,7 @@ footer .rights p {
 .dealers-section .dealer .map iframe {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
 }
@@ -2560,12 +2563,12 @@ footer .rights p {
   height: 0;
   overflow: hidden;
   padding-top: 15%;
-  margin-right: .5rem;
+  margin-left: .5rem;
 }
 .showrooms-section .showroom .images .img img {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -2582,7 +2585,7 @@ footer .rights p {
 .showrooms-section .showroom .map iframe {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
 }
@@ -2603,7 +2606,7 @@ footer .rights p {
 .videos-gallery .video-box .video a {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -2648,7 +2651,7 @@ footer .rights p {
 .images-gallery .image-box .image img {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -2661,12 +2664,12 @@ footer .rights p {
 .images-gallery .image-box .caption {
   position: absolute;
   bottom: 0;
-  left: -85px;
+  right: -85px;
   background: #eee;
   padding: 1rem;
   display: inline-block;
-  -webkit-box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
-          box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: -3px 3px 20px rgba(0, 0, 0, 0.5);
+          box-shadow: -3px 3px 20px rgba(0, 0, 0, 0.5);
   opacity: 0;
   visibility: hidden;
   -webkit-transition: all .2s ease-in-out;
@@ -2683,7 +2686,7 @@ footer .rights p {
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 .images-gallery .image-box:hover .caption {
-  left: 0;
+  right: 0;
   opacity: 1;
   visibility: visible;
 }
@@ -2704,7 +2707,7 @@ footer .rights p {
 .view-gallery .img img {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -2741,7 +2744,7 @@ footer .rights p {
 .view-gallery .view-gallery-slider .item img {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -2749,11 +2752,11 @@ footer .rights p {
 }
 .view-gallery .view-gallery-slider .slick-dots {
   position: absolute;
-  left: 50%;
+  right: 50%;
   bottom: -3rem;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
+  -webkit-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  transform: translateX(50%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2776,4 +2779,15 @@ footer .rights p {
 .view-gallery .view-gallery-slider .slick-dots .dot:hover {
   width: 45px;
   background: var(--mainColor);
+}
+.view-gallery-slider,
+.vehicles-hero-section,
+.slideshow,
+.offer-slider-container,
+.image-slider,
+.text-slider,
+.main-slider,
+.slider-for,
+.slider-nav {
+  direction: ltr;
 }

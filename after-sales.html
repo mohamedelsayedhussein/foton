@@ -16,8 +16,6 @@
     <link rel="stylesheet" href="vendors/bootstrap.css">
     <!-- Preloading Pace -->
     <link rel="stylesheet" href="vendors/pace-theme-minimal.css">
-    <!-- Slick Slider -->
-    <link rel="stylesheet" href="vendors/slick.css">
     <!-- Custom Style -->
     <link rel="stylesheet" href="css/style.css">
     <!-- responsive Style -->
@@ -754,7 +752,6 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/pace.js"></script>
-    <script src="js/slick.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="js/custom.js"></script>
     <script>
@@ -763,19 +760,6 @@
             $("#tabs li").removeClass("ui-corner-top").addClass("ui-corner-left");
         });
 
-        var heroVehiclesSlider = {
-            autoplay: true,
-            autoplaySpeed: 2400,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            speed: 1800,
-            pauseOnHover: false,
-            cssEase: 'cubic-bezier(.84, 0, .08, .99)',
-            prevArrow: $('.prev'),
-            nextArrow: $('.next'),
-        };
-
-        $('.hero-vehicles-slider').slick(heroVehiclesSlider);
 
         $('#car-type').click(function (e) {
             e.stopPropagation()

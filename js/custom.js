@@ -57,6 +57,7 @@ $(document).ready(function() {
     $('link[href="vendors/bootstrap.css"]').attr('href', 'vendors/bootstrap-rtl.css');
     $('link[href="css/responsive.css"]').attr('href', 'css/responsive-rtl.css');
     $('link[href="css/style.css"]').attr('href', 'css/style-rtl.css');
+    $('link[href="vendors/jquery-ui-v1.12.1.min.css"]').attr('href', 'vendors/jquery-ui-v1.12.1-rtl.min.css');
     
   });
 
@@ -66,6 +67,7 @@ $(document).ready(function() {
     $('link[href="vendors/bootstrap-rtl.css"]').attr('href', 'vendors/bootstrap.css');
     $('link[href="css/responsive-rtl.css"]').attr('href', 'css/responsive.css');
     $('link[href="css/style-rtl.css"]').attr('href', 'css/style.css');
+    $('link[href="vendors/jquery-ui-v1.12.1-rtl.min.css"]').attr('href', 'vendors/jquery-ui-v1.12.1.min.css');
     
   });
 

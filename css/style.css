@@ -2,7 +2,6 @@
 
 :root {
   --mainColor: #2395ec;
-  --secondaryColor: #dc3545;
   --mainFont: "Oswald", sans-serif;
   --primaryFont: "Arial", sans-serif;
     scroll-behavior: smooth;
@@ -52,11 +51,8 @@ a:active {
 .main-color {
   color: var(--mainColor);
 }
-.second-color {
-  color: var(--secondaryColor);
-}
 .bg-second-color {
-  background: var(--secondaryColor);
+  background: var(--mainColor);
 }
 .form-control {
   outline: none !important;
@@ -2401,7 +2397,7 @@ footer .rights p {
 }
 .careers .text-wrap h3.career-title,
 .careers .text-wrap h5.Vacancies {
-  color: var(--secondaryColor);
+  color: var(--mainColor);
 }
 .careers .text-wrap p.career-desc {
   line-height: 1.4;
@@ -2412,8 +2408,8 @@ footer .rights p {
   color: var(--mainColor);
 }
 .careers .form .personal-info {
-  color: var(--secondaryColor);
-  border: 2px solid var(--secondaryColor) !important;
+  color: var(--mainColor);
+  border: 2px solid var(--mainColor) !important;
 }
 .careers .form .form-group .form-control {
   font-size: .8rem;
@@ -2424,7 +2420,7 @@ footer .rights p {
 }
 .careers .form .form-group label.upload {
   color: #fff;
-  background: var(--secondaryColor);
+  background: var(--mainColor);
   padding: .5rem 1rem;
   cursor: pointer;
 }
@@ -2432,7 +2428,7 @@ footer .rights p {
   display: none;
 }
 .careers .form button[type='submit'] {
-  background: var(--secondaryColor);
+  background: var(--mainColor);
   color: #fff;
 }
 
@@ -2579,7 +2575,7 @@ footer .rights p {
   object-fit: cover;
 }
 .view-gallery .title h3 {
-  color: var(--secondaryColor);
+  color: var(--mainColor);
   margin: 0;
 }
 .view-gallery .date  {

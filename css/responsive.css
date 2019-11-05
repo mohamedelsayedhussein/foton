@@ -157,6 +157,11 @@
     width: 100%;
     height: 250px;
   }
+  .videos-gallery .video-box,
+  .images-gallery .image-box {
+    width: 75%;
+    margin: auto;
+  }
 }
 @media (max-width: 650px) {
   header .fixed-nav-bar .language-box {
@@ -215,6 +220,10 @@
     width: 300px;
   }
   .events-list .our-event {
+    width: 100%;
+  }
+  .videos-gallery .video-box,
+  .images-gallery .image-box {
     width: 100%;
   }
 }

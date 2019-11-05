@@ -7,9 +7,7 @@
   header .block-3 {
     background: #333 !important;
     z-index: 2;
-  }
-  header .block-3 {
-    width: 11%;
+    right: 0;
   }
   header .overlay {
     width: 100%;
@@ -19,10 +17,10 @@
     top: 50%;
     transform: translateY(-50%);
     width: 50%;
-    right: 10%;
+    right: 15%;
   }
   header .slider-control {
-    right: 18%;
+    right: 22%;
   }
   nav .main-menu .links .item:first-child {
     border-right: none;
@@ -65,6 +63,9 @@
 @media (max-width: 900px) {
   nav svg.svg-mobile-hidden {
     display: none !important;
+  }
+  header .block-3 {
+    width: 11% !important;
   }
 }
 @media (max-width: 767px) {
@@ -174,7 +175,10 @@
     font-size: 1.3rem;
   }
   header .text-slider-wrapper {
-    width: 80%;
+    width: 75%;
+  }
+  header .text-slider-wrapper p {
+    font-size: .9rem;
   }
   .vehicles-details-section .slideshow .controllers {
     display: none;

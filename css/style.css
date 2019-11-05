@@ -2242,11 +2242,13 @@ footer .rights p {
 .event-area .event-slider .slider-nav img {
   width: 100%;
   height: 100%;
-  opacity: .7;
+  opacity: .8;
   cursor: pointer;
+  border: 1px solid #242424;
 }
 .event-area .event-slider .slick-center img {
   opacity: 1;
+  border: 2px solid #000;
 }
 
 /*  events list page style  */

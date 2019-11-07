@@ -10,6 +10,7 @@
   outline: none !important;
 }
 body {
+  direction: rtl;
   background: #fff;
   overflow-x: hidden !important;
   font-family: var(--primaryFont);
@@ -802,6 +803,7 @@ header .slick-slide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: row-reverse;
 }
 .slider-control button {
   position: relative;
@@ -984,6 +986,7 @@ header .slick-slide.slick-active .slider-description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: row-reverse;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -1012,20 +1015,20 @@ header .slick-slide.slick-active .slider-description {
   transition: all 0.1s linear;
 }
 .block-slider-section .main-slider-controllers .prev-control button {
-  -webkit-transform: rotate(11deg);
-  -ms-transform: rotate(11deg);
-  transform: rotate(11deg);
-  -webkit-transform-origin: bottom right;
-  -ms-transform-origin: bottom right;
-  transform-origin: bottom right;
-}
-.block-slider-section .main-slider-controllers .next-control button {
   -webkit-transform: rotate(-11deg);
   -ms-transform: rotate(-11deg);
   transform: rotate(-11deg);
   -webkit-transform-origin: bottom left;
   -ms-transform-origin: bottom left;
   transform-origin: bottom left;
+}
+.block-slider-section .main-slider-controllers .next-control button {
+  -webkit-transform: rotate(11deg);
+  -ms-transform: rotate(11deg);
+  transform: rotate(11deg);
+  -webkit-transform-origin: bottom right;
+  -ms-transform-origin: bottom right;
+  transform-origin: bottom right;
 }
 .block-slider-section .main-slider-controllers button ion-icon {
   display: inline-block;
@@ -1706,7 +1709,7 @@ footer .rights p {
 .vehicles-details-section .slideshow .prevArrow {
   position: absolute;
   top: 50%;
-  right: -3rem;
+  left: -3rem;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -1721,7 +1724,7 @@ footer .rights p {
 .vehicles-details-section .slideshow .nextArrow {
   position: absolute;
   top: 50%;
-  left: -3rem;
+  right: -3rem;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -1829,7 +1832,7 @@ footer .rights p {
   height: 60vh;
   background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
     url("../img/services/services-banner.jpg");
-  background: -webkit-gradient(linear, right top, right bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.5))),
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.5))),
     url("../img/services/services-banner.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
     url("../img/services/services-banner.jpg");
@@ -1971,9 +1974,9 @@ footer .rights p {
 /* offers page style */
 
 .offers-banner {
-  background: -o-linear-gradient(rgba(0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))),
     url("../img/offers/offer-banner-bg.jpg");
-  background: -webkit-gradient(linear, right top, right bottom, from(rgba(0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))),
+  background: -o-linear-gradient(rgba(0, 0, 0.1), rgba(0, 0, 0, 0.1)),
     url("../img/offers/offer-banner-bg.jpg");
   background: linear-gradient(rgba(0, 0, 0.1), rgba(0, 0, 0, 0.1)),
     url("../img/offers/offer-banner-bg.jpg");
@@ -2027,9 +2030,9 @@ footer .rights p {
 /* blog page style */
 
 .blog-banner {
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.7))),
     url("../img/blog/blog-banner.jpg");
-  background: -webkit-gradient(linear, right top, right bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.7))),
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
     url("../img/blog/blog-banner.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
     url("../img/blog/blog-banner.jpg");
@@ -2179,9 +2182,9 @@ footer .rights p {
 /*  about page style */
 
 .about-banner {
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.4))),
     url("../img/about/about-banner.jpg");
-  background: -webkit-gradient(linear, right top, right bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.4))),
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
     url("../img/about/about-banner.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
     url("../img/about/about-banner.jpg");
@@ -2217,18 +2220,18 @@ footer .rights p {
 /* contact page style */
 
 .contact-banner {
+  background: -webkit-gradient(
+      linear,
+      left top, left bottom,
+      from(rgba(0, 0, 0, 0.4)),
+      color-stop(rgba(0, 0, 0, 0.6)),
+      to(rgba(0, 0, 0, 0.5))
+    ),
+    url("../img/contact/contact-banner.jpg");
   background: -o-linear-gradient(
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.5)
-    ),
-    url("../img/contact/contact-banner.jpg");
-  background: -webkit-gradient(
-      linear,
-      right top, right bottom,
-      from(rgba(0, 0, 0, 0.4)),
-      color-stop(rgba(0, 0, 0, 0.6)),
-      to(rgba(0, 0, 0, 0.5))
     ),
     url("../img/contact/contact-banner.jpg");
   background: linear-gradient(
@@ -2337,10 +2340,10 @@ footer .rights p {
   vertical-align: middle;
 }
 .event-area .event-slider .PrevArrowBtn {
-  right: .8rem;
+  left: .8rem;
 }
 .event-area .event-slider .NextArrowBtn {
-  left: .8rem;
+  right: .8rem;
 }
 .event-area .event-slider .slider-for .item {
   height: 0;
@@ -2784,4 +2787,15 @@ footer .rights p {
 .view-gallery .view-gallery-slider .slick-dots .dot:hover {
   width: 45px;
   background: var(--mainColor);
+}
+.view-gallery-slider,
+.vehicles-hero-section,
+.slideshow,
+.offer-slider-container,
+.image-slider,
+.text-slider,
+.main-slider,
+.slider-for,
+.slider-nav {
+  direction: ltr;
 }

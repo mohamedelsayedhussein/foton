@@ -116,6 +116,9 @@
   nav .main-menu .links .extra-links li {
     margin: 0;
   }
+  nav .main-menu .links .extra-links .dropdown-list-item ion-icon {
+    right: -2rem;
+  }
   .news-slider .box {
     width: 75% !important;
     margin: auto;

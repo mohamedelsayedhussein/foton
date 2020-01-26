@@ -989,7 +989,6 @@ header .text-slide h1 {
   font-family: "Cinzel";
   text-transform: uppercase;
   color: var(--mainColor);
-  opacity: 0;
 }
 header .text-slide h1 span {
   display: block;
@@ -998,25 +997,23 @@ header .text-slide h1 span {
   letter-spacing: 4px;
   color: #fff;
   margin-bottom: 0.8rem;
-  opacity: 0;
 }
 header .text-slide p {
   margin: 0;
   padding: 0 0.5rem 0 0;
   color: #ddd;
-  opacity: 0;
 }
 header .slick-slide.slick-active .slider-title {
   -webkit-animation: fadeInDown 0.3s both linear;
   animation: fadeInDown 0.3s both linear;
-  -webkit-animation-delay: .5s;
-  animation-delay: .5s;
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
 }
 header .slick-slide.slick-active .slider-description {
   -webkit-animation: fadeInUp 0.3s both linear;
   animation: fadeInUp 0.3s both linear;
-  -webkit-animation-delay: .7s;
-  animation-delay: .7s;
+  -webkit-animation-delay: 1.4s;
+  animation-delay: 1.4s;
 }
 
 /*  produts section style */

@@ -1019,15 +1019,6 @@ header .slick-slide.slick-active .slider-description {
   animation-delay: .7s;
 }
 
-/* @keyframes fadeInDown {
-  0%{opacity: 0;transform: translateY(-30px);}
-  100%{opacity: 1;transform: translateY(0px);}
-}
-@keyframes fadeInUp {
-  0%{opacity: 0;transform: translateY(30px);}
-  100%{opacity: 1;transform: translateY(0px);}
-} */
-
 /*  produts section style */
 
 .block-slider-section {
@@ -1045,6 +1036,7 @@ header .slick-slide.slick-active .slider-description {
   width: 60%;
   margin: auto;
 }
+.custom-character:first-letter { text-transform:uppercase}
 .block-slider-section .main-slider-controllers {
   display: -webkit-box;
   display: -ms-flexbox;

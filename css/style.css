@@ -989,6 +989,7 @@ header .text-slide h1 {
   font-family: "Cinzel";
   text-transform: uppercase;
   color: var(--mainColor);
+  opacity: 0;
 }
 header .text-slide h1 span {
   display: block;
@@ -997,25 +998,35 @@ header .text-slide h1 span {
   letter-spacing: 4px;
   color: #fff;
   margin-bottom: 0.8rem;
+  opacity: 0;
 }
 header .text-slide p {
   margin: 0;
   padding: 0 0.5rem 0 0;
   color: #ddd;
-}
-header .slick-slide.slick-active .slider-title,
-header .slick-slide.slick-active .slider-description {
-  -webkit-animation: fadeInUp 0.3s both ease-in-out;
-  animation: fadeInUp 0.3s both ease-in-out;
+  opacity: 0;
 }
 header .slick-slide.slick-active .slider-title {
-  -webkit-animation-delay: 1.7s;
-  animation-delay: 1.7s;
+  -webkit-animation: fadeInDown 0.3s both linear;
+  animation: fadeInDown 0.3s both linear;
+  -webkit-animation-delay: .5s;
+  animation-delay: .5s;
 }
 header .slick-slide.slick-active .slider-description {
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
+  -webkit-animation: fadeInUp 0.3s both linear;
+  animation: fadeInUp 0.3s both linear;
+  -webkit-animation-delay: .7s;
+  animation-delay: .7s;
 }
+
+/* @keyframes fadeInDown {
+  0%{opacity: 0;transform: translateY(-30px);}
+  100%{opacity: 1;transform: translateY(0px);}
+}
+@keyframes fadeInUp {
+  0%{opacity: 0;transform: translateY(30px);}
+  100%{opacity: 1;transform: translateY(0px);}
+} */
 
 /*  produts section style */
 
